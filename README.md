@@ -115,15 +115,16 @@ POST	/users	Create a new user
 GET	/users/edit/{id}	Show edit user form
 POST	/users/update/{id}	Update user information
 GET	/users/delete/{id}	Delete a user
-🎨 Screenshots
-User Management Page
+## 🎨 Screenshots
+
+### User Management Page
 ![User List](./screenshots/user-list.png)
 
-Add User Form
-![User List](./screenshots/add-list.png)
+### Add User Form
+![Add User](./screenshots/add-user.png)
 
-Edit User Form
-![User List](./screenshots/edit-list.png)
+### Edit User Form
+![Edit User](./screenshots/edit-user.png)
 
 🔧 Troubleshooting
 Port 8080 Already in Use
