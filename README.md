@@ -2,9 +2,11 @@
 
 A full-stack web application built with **Spring Boot** and **Thymeleaf** that demonstrates basic **CRUD (Create, Read, Update, Delete)** operations with **PostgreSQL** database.
 
+---
+
 ## 🚀 Live Demo
 
-> *Application is running locally on `http://localhost:8080`*
+> Application is running locally on `http://localhost:8080`
 
 ---
 
@@ -24,12 +26,12 @@ A full-stack web application built with **Spring Boot** and **Thymeleaf** that d
 
 | Technology | Description |
 |------------|-------------|
-| ![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=java&logoColor=white) | Programming Language |
-| ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.2.0-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) | Framework |
-| ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.0.0-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white) | Template Engine |
-| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18.6-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) | Database |
-| ![JPA](https://img.shields.io/badge/JPA-Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white) | ORM Framework |
-| ![Maven](https://img.shields.io/badge/Maven-4.0.0-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white) | Build Tool |
+| **Java 17** | Programming Language |
+| **Spring Boot 3.2.0** | Framework |
+| **Thymeleaf** | Template Engine |
+| **PostgreSQL 18** | Database |
+| **JPA/Hibernate** | ORM Framework |
+| **Maven** | Build Tool |
 
 ---
 
@@ -56,6 +58,10 @@ intern-demo/
 │ │ │ └── edit.html
 │ │ └── application.properties
 │ └── test/
+├── screenshots/
+│ ├── user-list.png
+│ ├── add-user.png
+│ └── edit-user.png
 ├── .gitignore
 ├── pom.xml
 ├── mvnw
@@ -70,12 +76,9 @@ text
 
 ### Prerequisites
 
-- **Java 17** or higher
-- **PostgreSQL 18** or higher
-- **Maven** (or use the included Maven Wrapper)
-- **Git** (optional)
-
----
+- Java 17 or higher
+- PostgreSQL 18 or higher
+- Maven (or use the included Maven Wrapper)
 
 ### Installation & Setup
 
@@ -97,20 +100,14 @@ spring.datasource.username=postgres
 spring.datasource.password=YOUR_PASSWORD
 3. Build the Project
 bash
-# Using Maven Wrapper (Windows)
-./mvnw clean install
-
-# Using Maven Wrapper (Linux/Mac)
 ./mvnw clean install
 4. Run the Application
 bash
 ./mvnw spring-boot:run
 5. Access the Application
-Open your browser and go to:
-
 text
 http://localhost:8080/users
-🔄 API Endpoints (REST)
+🔄 API Endpoints
 Method	Endpoint	Description
 GET	/users	View all users (Thymeleaf)
 GET	/users/new	Show create user form
@@ -118,44 +115,21 @@ POST	/users	Create a new user
 GET	/users/edit/{id}	Show edit user form
 POST	/users/update/{id}	Update user information
 GET	/users/delete/{id}	Delete a user
-GET	/hello	Test endpoint
-REST API Example
-Create User (POST):
-
-json
-{
-    "name": "Maahfuz",
-    "email": "maahfuz@example.com",
-    "age": 25
-}
-Response:
-
-json
-{
-    "id": 1,
-    "name": "Maahfuz",
-    "email": "maahfuz@example.com",
-    "age": 25
-}
 🎨 Screenshots
 User Management Page
-https://./screenshots/user-list.png
+![User List](./screenshots/user-list.png)
 
 Add User Form
-https://./screenshots/add-user.png
+![User List](./screenshots/add-list.png)
 
 Edit User Form
-https://./screenshots/edit-user.png
+![User List](./screenshots/edit-list.png)
 
 🔧 Troubleshooting
 Port 8080 Already in Use
-Change the port in application.properties:
-
 properties
 server.port=8081
 Database Connection Error
-Ensure PostgreSQL service is running:
-
 bash
 # Windows
 Get-Service -Name *postgres*
@@ -164,36 +138,7 @@ Get-Service -Name *postgres*
 sudo systemctl status postgresql
 Compilation Errors
 bash
-# Clean and rebuild
 ./mvnw clean compile
-🤝 Contributing
-Fork the repository
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-👨‍💻 Author
-Md Mahfuzur Rahman
-
-GitHub:https://github.com/maahfuzdev
-
-LinkedIn: https://www.linkedin.com/in/md-mahfuzur-rahman-cse/
-
-🙏 Acknowledgments
-Spring Boot
-
-Thymeleaf
-
-PostgreSQL
-
 📊 Database Schema
 sql
 CREATE TABLE users (
@@ -202,19 +147,20 @@ CREATE TABLE users (
     email VARCHAR(255) UNIQUE,
     age INTEGER NOT NULL
 );
+👨‍💻 Author
+Md Mahfuzur Rahman
+
+GitHub: @maahfuzdev
+
+LinkedIn: Md Mahfuzur Rahman
+
+🙏 Acknowledgments
+Spring Boot
+
+Thymeleaf
+
+PostgreSQL
+
 ⭐ Support
 If you find this project helpful, please give it a ⭐ on GitHub!
-
 Made with ❤️ by Md Mahfuzur Rahman
-
-text
-
----
-
-## **📸 Screenshots Folder Create করুন (Optional)**
-
-```powershell
-# Project Root এ Screenshots Folder তৈরি করুন
-mkdir screenshots
-
-# তারপর আপনার Application এর Screenshot নিন এবং ফোল্ডারে রাখুন
