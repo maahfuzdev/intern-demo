@@ -118,13 +118,13 @@ GET	/users/delete/{id}	Delete a user
 ## 🎨 Screenshots
 
 ### User Management Page
-![User List](https://github.com/maahfuzdev/intern-demo/blob/bbd136ffe502c0089b25b9ba6dc3ef081c27c561/screenshots/add-user.png)
+![User List](https://raw.githubusercontent.com/maahfuzdev/intern-demo/bbd136ffe502c0089b25b9ba6dc3ef081c27c561/screenshots/user-list.png)
 
 ### Add User Form
-![Add User](./screenshots/add-user.png)
+![Add User](https://raw.githubusercontent.com/maahfuzdev/intern-demo/bbd136ffe502c0089b25b9ba6dc3ef081c27c561/screenshots/add-user.png)
 
 ### Edit User Form
-![Edit User](./screenshots/edit-user.png)
+![Edit User](https://raw.githubusercontent.com/maahfuzdev/intern-demo/bbd136ffe502c0089b25b9ba6dc3ef081c27c561/screenshots/edit-user.png)
 
 🔧 Troubleshooting
 Port 8080 Already in Use
