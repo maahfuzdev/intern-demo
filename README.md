@@ -118,7 +118,7 @@ GET	/users/delete/{id}	Delete a user
 ## 🎨 Screenshots
 
 ### User Management Page
-![User List](./screenshots/user-list.png)
+![User List](https://github.com/maahfuzdev/intern-demo/blob/bbd136ffe502c0089b25b9ba6dc3ef081c27c561/screenshots/add-user.png)
 
 ### Add User Form
 ![Add User](./screenshots/add-user.png)
